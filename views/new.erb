@@ -1,0 +1,10 @@
+<h2>Add New Post</h2>
+<p>
+	<form action="/new" method="POST" role="form">
+	<textarea class="form-control" rows="1" placeholder="Author" name="author"><%= @author %></textarea>
+	<br />
+	<textarea class="form-control" rows="6" placeholder="Type your text here!" name="content"><%= @content %></textarea>
+	<br />
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</p>
