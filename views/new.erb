@@ -1,9 +1,9 @@
 <h2>Add New Post</h2>
 <p>
 	<form action="/new" method="POST" role="form">
-	<textarea class="form-control" rows="1" placeholder="Author" name="author"><%= @author %></textarea>
+	<textarea class="form-control" rows="1" placeholder="Author" name="post[author]"><%= @c.author %></textarea>
 	<br />
-	<textarea class="form-control" rows="6" placeholder="Type your text here!" name="content"><%= @content %></textarea>
+	<textarea class="form-control" rows="6" placeholder="Type your text here!" name="post[post]"><%= @c.post %></textarea>
 	<br />
 	<button type="submit" class="btn btn-primary">Submit</button>
 </form>
